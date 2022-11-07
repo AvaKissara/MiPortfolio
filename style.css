@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
   --text-color: #ececec;
   --icon-background-color: #6f975d;
@@ -8,11 +11,13 @@
   --brand-color-bootstrap: rgb(112, 48, 185);
   --brand-color-database: #b52e31;
   --brand-color-symfony: #000000;
+
+  --title-font-family: 'Saira', sans-serif;
+  --text-font-family:'Anonymous Pro', monospace;
 }
 
 .wrapper {
   min-height: 100vh;
-  font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: var(--text-color);
   position: relative;
@@ -40,13 +45,13 @@ section:nth-child(3) {
   justify-content: flex-start;
 }
 section:nth-child(4) {
-  background: #DD6E42;
+  background: #c25e36;
 }
 section:nth-child(5) {
   background: #242425;
 }
 section:nth-child(6) {
-  background: #3d353a;
+  background: #343033;
 }
 /* section:nth-child(7) {
   background: #ffcc00;
@@ -71,6 +76,7 @@ section:nth-child(6) {
   transition: all 0.15s ease-out;
 }
 .nav__title {
+  font-family: 'Saira', sans-serif;
   font-size: 32px;
   font-weight: 300;
   margin: 0 0 0.25em;
@@ -81,8 +87,8 @@ section:nth-child(6) {
   transition: height 0.3s ease-out, opacity 0.2s ease-out;
 }
 .nav__body {
+  font-family: var(--text-font-family);
   font-weight: 100;
-  font-size: 18px;
   font-size: 18px;
   width: 300px;
   height: 0;
@@ -156,12 +162,12 @@ section:nth-child(6) {
 h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 50px;
   letter-spacing: 1px;
   color: #333;
 }
 h1 span {
+  font-family: 'Saira', sans-serif;
   display: inline-block;
   animation: slideLeft 1.5s forwards;
   opacity: 0;
@@ -179,10 +185,10 @@ h1 span {
   }
 }
 
-h2{
+
+.overlay>h2{
+  font-family: 'Saira', sans-serif;
   color: var(--text-color);
-}
-h2{
   animation: ani 2s;
   text-align: center;
 }
@@ -217,12 +223,12 @@ h2{
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 20vh 0;
+  margin: 12vh 0 18vh;
   padding: 0;
 }
 .social .social__media li {
   display: inline-flex;
-  margin: 3rem 2rem -3rem;
+  margin: 2rem 2rem -13rem;
 }
 .social .social__media li:nth-child(1) a:hover i {
   color: var(--brand-color-html5);
@@ -293,16 +299,17 @@ h2{
 
 /* ===== TEXTE COMPETENCES ===== */
 .comp-box {
-  width: 50%;
+  width: 54%;
   padding-right: 40px;
   margin: 0 auto;
 }
 
 .comp {
-  font-family: 'Dosis', sans-serif;
-  margin: 0 0 14px 50px;
+  font-family: 'Anonymous Pro', monospace;
+  margin: 10px 0 0 50px;
   text-align: justify;
-  font-size: 0.54em;
+  font-size: 0.6em;
+  font-weight:400;
   color: #ffffff;
   /* text-shadow: 0 2px 2px #25255c,0 -2px 2px rgb(255, 254, 220); */
 }
@@ -368,6 +375,7 @@ h2{
   right: -15px;
 }
 .main-timeline .title {
+  font-family: 'Saira', sans-serif;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -375,6 +383,8 @@ h2{
   margin: 0 0 8px;
 }
 .main-timeline .description {
+  font-family: var(--text-font-family);
+
   font-size: 16px;
   margin: 0;
 }
@@ -469,7 +479,7 @@ h2{
 
 
 .panel p {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Saira', sans-serif;
   text-transform: uppercase;
   text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 2em;
@@ -507,7 +517,6 @@ h2{
   width: 560px;
   margin-top: -200px;
   overflow: hidden;
-  margin: 0 auto;
   border: 1px solid black;
   border-radius: 2px;
   padding: 20px;
@@ -533,39 +542,40 @@ h2{
   float: left;
   margin-right: 20px;
   width: 130px;
-  height: 140px;
+  height: 148px;
 }
 
 .header h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Saira', sans-serif;
   font-weight: 400;
   font-size: 36px;
   letter-spacing: 2px;
   font-variant: small-caps;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-align: left;
 }
 
 .header h2 {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Saira', sans-serif;
   font-weight: 300;
   font-size: 26px;
   letter-spacing: 2px;
-  margin-top: 12px;
-  margin-bottom: 0px;
-}
-
-.header h3 {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  letter-spacing: 1px;
   margin-top: 16px;
   margin-bottom: 0px;
 }
 
+.header h3 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
 .profile-bio {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--text-font-family);
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 160%;
