@@ -5,7 +5,7 @@
   --text-color: #ececec;
   --icon-background-color: #065A82;
   --brand-color-html5: #e34f26;
-  --brand-color-css3: #1187e7;
+  --brand-color-css3: #008cd7;
   --brand-color-js: #f9d405;
   --brand-color-php: #374bff;
   --brand-color-bootstrap: rgb(112, 48, 185);
@@ -60,7 +60,7 @@ section:nth-child(6) {
 /* ===== NAV ===== */
 .nav__wrapper {
   position: fixed;
-  height: 100%;
+  height: 100vh;
   padding: 30px;
   display: flex;
   flex-flow: column nowrap;
@@ -132,7 +132,7 @@ section:nth-child(6) {
 }
 .nav__wrapper>.nav li.active:after {
   width: 35px;
-  height: 400px;
+  height: 700px;
   top: 35px;
 }
 .nav__wrapper>.nav li.active .nav__counter {
@@ -282,6 +282,7 @@ h1 span {
   height: 100%;
   border-radius: 100%;
   background-color: var(--icon-background-color);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
   transform: scale3d(1, 1, 1);
   transform-origin: 50% 50%;
   will-change: transform;
@@ -675,4 +676,88 @@ h1 span {
     top: 5px;
     box-shadow: -22px 60px 2px -10px rgba(0, 0, 0, 0.5);
   }
+}
+
+
+@media only screen and (max-width: 762px){
+  .wrapper {
+    width: 100vw;
+  }
+
+  .nav__wrapper {
+    justify-content: flex-start;
+    padding: 0;
+    letter-spacing: -2px;
+  }
+
+  .nav__wrapper>.nav li:after {
+    width: 14px;;
+  }
+
+  .nav__wrapper>.nav li.active:after {
+    width: 25px;
+  }
+
+  .nav__counter {
+    font-size: 24px;
+  }
+
+  .nav__title {
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .nav {
+    margin: 35px 0 100px 30px;
+  }
+
+  .social {
+    width: 90%;
+    min-height: 30vh;
+  }
+
+  .social .social__media {
+    margin: 10vh 0 4vh;
+  }
+
+  .social .social__media li {
+    margin: 1rem 0 0 5rem;
+  }
+
+  .social .social__media li a {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .social .social__media li a i {
+    font-size: 3.4rem;
+  }
+
+  .comp-box {
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 56px;
+  }
+
+  .comp {
+    font-size: 0.36em;
+    margin: 10px 0 0 0;
+  }
+
+  div.row {
+    max-width: 630px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 400px;
+  }
+
+  .panels {
+    flex-direction: column;
+    padding-left: 160px;
+    padding-right: 60px;
+  }
+ 
+
 }
