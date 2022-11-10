@@ -691,20 +691,25 @@ h1 span {
   }
 
   .nav__wrapper>.nav li:after {
-    width: 14px;;
+    width: 12px;;
   }
 
   .nav__wrapper>.nav li.active:after {
-    width: 25px;
+    width: 22px;
+  }
+
+  .nav__wrapper>.nav li.active .nav__counter {
+    font-size: 38px;
   }
 
   .nav__counter {
-    font-size: 24px;
+    font-size: 16px;
+    margin: -12px;
   }
 
   .nav__title {
     writing-mode: vertical-lr;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 0;
   }
@@ -713,17 +718,23 @@ h1 span {
     margin: 35px 0 100px 30px;
   }
 
+  section.section {
+    height: 100%;
+  }
+
+
   .social {
-    width: 90%;
-    min-height: 30vh;
+    width: 88%;
+    min-height: 38vh;
+    justify-content: flex-start;
   }
 
   .social .social__media {
-    margin: 10vh 0 4vh;
+    margin: 6vh 0 0vh;
   }
 
   .social .social__media li {
-    margin: 1rem 0 0 5rem;
+    margin: 1rem 0 0 3rem;
   }
 
   .social .social__media li a {
@@ -736,9 +747,12 @@ h1 span {
   }
 
   .comp-box {
-    width: 80%;
-    padding: 10px 10px 10px 10px;
+    width: 76%;
+    padding: 0 10px 10px 10px;
     margin-left: 56px;
+    margin-top: -60px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
   }
 
   .comp {
@@ -748,16 +762,33 @@ h1 span {
 
   div.row {
     max-width: 630px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 400px;
+    margin-left: 40px;
+    margin-right: 8px;
+    margin-top: 30px;
+  }
+
+  .main-timeline .timeline-year {
+    font-size: 28px;
+  }
+
+  .main-timeline .title {
+    font-size: 18px;
+  }
+
+  .main-timeline .description {
+    font-size: 14px;
   }
 
   .panels {
+    height: 100vh;
     flex-direction: column;
-    padding-left: 160px;
-    padding-right: 60px;
+    padding-left: 70px;
+    padding-right: 50px;
+    margin-top: 4px;
   }
  
+  section.section5 {
+    height: 100vh;
+  }
 
 }
