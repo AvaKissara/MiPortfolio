@@ -733,6 +733,7 @@ h1 span {
     width: 88%;
     min-height: 38vh;
     justify-content: flex-start;
+    margin-bottom: 22px;
   }
 
   .social .social__media {
