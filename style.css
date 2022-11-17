@@ -730,8 +730,8 @@ h1 span {
 
 
   .social {
-    width: 88%;
-    min-height: 38vh;
+    width: 90%;
+    min-height: 30vh;
     justify-content: flex-start;
     margin-bottom: 22px;
   }
@@ -763,7 +763,7 @@ h1 span {
   }
 
   .comp {
-    font-size: 0.36em;
+    font-size: 0.4em;
     margin: 10px 0 0 0;
   }
 
