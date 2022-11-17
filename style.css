@@ -544,7 +544,7 @@ h1 span {
 .header img {
   float: left;
   margin-right: 20px;
-  width: 130px;
+  width: 100px;
   height: 148px;
 }
 
@@ -692,7 +692,7 @@ h1 span {
   }
 
   .nav__wrapper>.nav li {
-    margin-bottom: 6.8em;
+    margin-bottom: 6.2em;
   }
 
   .nav__wrapper>.nav li:after {
@@ -704,7 +704,7 @@ h1 span {
   }
 
   .nav__wrapper>.nav li.active .nav__counter {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .nav__counter {
@@ -716,7 +716,8 @@ h1 span {
     writing-mode: vertical-lr;
     font-size: 24px;
     font-weight: 700;
-    margin: 0;
+    margin: 0 0 0 -12px;
+
   }
 
   .nav {
@@ -819,6 +820,7 @@ h1 span {
 
   .profile-social-links {
     background: #5e5c5c;
+    width: 54px;
   }
 
   .profile-card {
