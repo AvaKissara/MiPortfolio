@@ -835,5 +835,27 @@ h1 span {
   .header img {
     width: 94px;
   }
+}
 
+@media only screen and (min-width: 743px) and (max-width: 1024px) {
+  .nav__wrapper {
+    padding: 10px;
+  }
+  .nav__title {
+    writing-mode: vertical-lr;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 0 12px;
+
+  }
+
+  .social {
+    min-height: 30vh;
+  }
+
+  .comp-box {
+    width: 80%;
+    padding: 50px 50px 50px 10px;
+    margin: 0 0 20px 60px;
+  }
 }
