@@ -265,6 +265,15 @@ h1 span {
   position: relative;
   transition: 0.5s ease all;
 }
+.social .social__media li a svg {
+  display: flex;
+  font-size: 4.4rem;
+  color: var(--text-color);
+  z-index: 999;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: 0.5s ease all;
+}
 .social .social__media li a i {
   display: flex;
   font-size: 4.4rem;
