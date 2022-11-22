@@ -268,7 +268,7 @@ h1 span {
 .social .social__media li a svg {
   display: flex;
   font-size: 4.4rem;
-  color: var(--text-color);
+  filter: sepia(60%);
   z-index: 999;
   will-change: transform;
   transform-style: preserve-3d;
@@ -306,6 +306,11 @@ h1 span {
 .social .social__media li a:hover i {
   color: var(--inverse-background-color);
   transform: scale3d(1.5, 1.5, 1);
+}
+.social .social__media li a:hover svg {
+  color: var(--inverse-background-color);
+  transform: scale3d(1.5, 1.5, 1);
+  filter: sepia(0);
 }
 
 
