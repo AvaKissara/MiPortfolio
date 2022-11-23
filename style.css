@@ -232,27 +232,32 @@ h1 span {
   display: inline-flex;
   margin: 1rem 2rem -13rem;
 }
-.social .social__media li:nth-child(1) a:hover i {
+.social .social__media li:nth-child(1) a:hover iconify-icon {
   color: var(--brand-color-html5);
 }
-.social .social__media li:nth-child(2) a:hover i {
+.social .social__media li:nth-child(2) a:hover iconify-icon {
   color: var(--brand-color-css3);
 }
-.social .social__media li:nth-child(3) a:hover i {
+.social .social__media li:nth-child(3) a:hover iconify-icon {
   color: var(--brand-color-js);
 }
-.social .social__media li:nth-child(4) a:hover i {
+.social .social__media li:nth-child(4) a:hover iconify-icon {
   color: var(--brand-color-php);
 }
-.social .social__media li:nth-child(5) a:hover i {
+.social .social__media li:nth-child(5) a:hover iconify-icon {
   color: var(--brand-color-bootstrap);
 }
-.social .social__media li:nth-child(6) a:hover i {
+.social .social__media li:nth-child(6) a:hover iconify-icon {
   color: var(--brand-color-database);
 }
-.social .social__media li:nth-child(7) a:hover i {
+.social .social__media li:nth-child(7) a:hover iconify-icon {
   color: var(--brand-color-symfony);
 }
+.social .social__media li:nth-child(8) a:hover iconify-icon {
+  color: var(--brand-color-css3);
+}
+
+
 .social .social__media li a {
   font-size: 1.8rem;
   text-decoration: none;
@@ -273,9 +278,9 @@ h1 span {
   transform-style: preserve-3d;
   transition: 0.5s ease all;
 }
-.social .social__media li a i {
+.social .social__media li a iconify-icon {
   display: flex;
-  font-size: 4.4rem;
+  font-size: 4.8rem;
   color: var(--text-color);
   z-index: 999;
   will-change: transform;
@@ -302,7 +307,7 @@ h1 span {
   transform: scale3d(0, 0, 0);
   transition: 0.25s ease-in;
 }
-.social .social__media li a:hover i {
+.social .social__media li a:hover iconify-icon {
   color: var(--inverse-background-color);
   transform: scale3d(1.5, 1.5, 1);
 }
