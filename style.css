@@ -5,10 +5,10 @@
   --text-color: #ececec;
   --icon-background-color: #065A82;
   --brand-color-html5: #e34f26;
-  --brand-color-css3: #008cd7;
+  --brand-color-css3:  #2443bb;
   --brand-color-js: #f9d405;
-  --brand-color-php: #374bff;
-  --brand-color-bootstrap: rgb(112, 48, 185);
+  --brand-color-php: rgb(54, 8, 182);;
+  --brand-color-cs: rgb(96, 0, 206);
   --brand-color-database: #b52e31;
   --brand-color-symfony: #000000;
 
@@ -245,7 +245,7 @@ h1 span {
   color: var(--brand-color-php);
 }
 .social .social__media li:nth-child(5) a:hover iconify-icon {
-  color: var(--brand-color-bootstrap);
+  color: var(--brand-color-cs);
 }
 .social .social__media li:nth-child(6) a:hover iconify-icon {
   color: var(--brand-color-database);
@@ -254,6 +254,9 @@ h1 span {
   color: var(--brand-color-symfony);
 }
 .social .social__media li:nth-child(8) a:hover iconify-icon {
+  color: var(--brand-color-js);
+}
+.social .social__media li:nth-child(9) a:hover iconify-icon {
   color: var(--brand-color-css3);
 }
 
