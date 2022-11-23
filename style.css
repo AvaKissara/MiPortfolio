@@ -267,8 +267,7 @@ h1 span {
 }
 .social .social__media li a svg {
   display: flex;
-  font-size: 4.4rem;
-  filter: sepia(60%);
+  filter: sepia(66%);
   z-index: 999;
   will-change: transform;
   transform-style: preserve-3d;
