@@ -207,8 +207,6 @@ h1 span {
   }
 }
 
-
-
 /* ===== ICONES COMPETENCES ===== */
 .social {
   display: flex;
@@ -531,7 +529,6 @@ h1 span {
 }
 
 
-
 /* ===== VISIT CARD ===== */
 .profile-card {
   background: whitesmoke;
@@ -649,6 +646,9 @@ h1 span {
   transition: all 0.3s ease;
 }
 
+ul> li> a:hover {
+  text-decoration: none;
+}
 
 .profile-card {
   -webkit-transform: perspective(1600px) rotateX(50deg) rotateY(0deg) rotateZ(-10deg) translateY(50%) scale(0.9);
@@ -701,6 +701,9 @@ h1 span {
 }
 
 
+
+
+/*MEDIA QUERIES*/
 @media only screen and (max-width: 742px){
   .wrapper {
     width: 100vw;
@@ -856,6 +859,8 @@ h1 span {
     width: 94px;
   }
 }
+
+
 
 @media only screen and (min-width: 743px) and (max-width: 1024px) {
   .nav__wrapper {
