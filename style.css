@@ -749,7 +749,6 @@ h1 span {
     height: 100%;
   }
 
-
   .social {
     width: 90%;
     min-height: 30vh;
@@ -758,7 +757,7 @@ h1 span {
   }
 
   .social .social__media {
-    margin: 6vh 0 0vh;
+    margin: 6vh 0 8vh;
   }
 
   .social .social__media li {
