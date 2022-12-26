@@ -5,10 +5,10 @@
   --text-color: #ececec;
   --icon-background-color: #065A82;
   --brand-color-html5: #e34f26;
-  --brand-color-css3:  #2443bb;
+  --brand-color-css3:  #1749d3;
   --brand-color-js: #f9d405;
   --brand-color-php: rgb(54, 8, 182);;
-  --brand-color-cs: rgb(96, 0, 206);
+  --brand-color-cs: rgb(69, 0, 206);
   --brand-color-database: #b52e31;
   --brand-color-symfony: #000000;
 
@@ -584,19 +584,20 @@ h1 span {
 .header h2 {
   font-family: var(--title-font-family);
   font-weight: 300;
-  font-size: 26px;
+  font-size: 16px;
   letter-spacing: 2px;
-  margin-top: 16px;
+  margin-top: 10px;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .header h3 {
   font-family: var(--title-font-family);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
-  margin-top: 20px;
-  margin-bottom: 26px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .profile-bio {
