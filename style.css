@@ -867,6 +867,11 @@ ul> li> a:hover {
   .header img {
     width: 94px;
   }
+
+  .card-icon {
+    color: #ffffff;
+    margin: 0.7rem;
+  }
 }
 
 
