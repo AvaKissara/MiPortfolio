@@ -243,20 +243,24 @@ h1 span {
   color: var(--brand-color-php);
 }
 .social .social__media li:nth-child(5) a:hover iconify-icon {
-  color: var(--brand-color-cs);
-}
-.social .social__media li:nth-child(6) a:hover iconify-icon {
   color: var(--brand-color-database);
 }
+.social .social__media li:nth-child(6) a:hover iconify-icon {
+  color: var(--brand-color-cs);
+}
 .social .social__media li:nth-child(7) a:hover iconify-icon {
-  color: var(--brand-color-symfony);
+  color: var(--brand-color-html5);
 }
 .social .social__media li:nth-child(8) a:hover iconify-icon {
-  color: var(--brand-color-js);
+  color: var(--brand-color-symfony);
 }
 .social .social__media li:nth-child(9) a:hover iconify-icon {
+  color: var(--brand-color-js);
+}
+.social .social__media li:nth-child(10) a:hover iconify-icon {
   color: var(--brand-color-css3);
 }
+
 
 
 .social .social__media li a {
