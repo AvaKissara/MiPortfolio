@@ -742,19 +742,20 @@ ul> li> a:hover {
   }
 
   .nav__wrapper>.nav li.active .nav__counter {
-    font-size: 32px;
+    font-size: 28px;
+    margin: -20px;
   }
 
   .nav__counter {
     font-size: 16px;
-    margin: -12px;
+    margin: -20px;
   }
 
   .nav__title {
     writing-mode: vertical-lr;
     font-size: 24px;
     font-weight: 700;
-    margin: 0 0 0 -12px;
+    margin: 0 0 0 -20px;
 
   }
 
