@@ -7,7 +7,7 @@
   --brand-color-html5: #e34f26;
   --brand-color-css3:  #1749d3;
   --brand-color-js: #f9d405;
-  --brand-color-php: rgb(54, 8, 182);;
+  --brand-color-php: rgb(75, 8, 182);;
   --brand-color-cs: rgb(69, 0, 206);
   --brand-color-database: #b52e31;
   --brand-color-symfony: #000000;
@@ -258,7 +258,7 @@ h1 span {
   color: var(--brand-color-js);
 }
 .social .social__media li:nth-child(10) a:hover iconify-icon {
-  color: var(--brand-color-css3);
+  color: var(--brand-color-database);
 }
 
 
