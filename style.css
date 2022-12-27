@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
 :root {
   --text-color: #ececec;
   --icon-background-color: #065A82;
@@ -14,6 +32,13 @@
 
   --title-font-family: 'Saira', sans-serif;
   --text-font-family:'Roboto Condensed', sans-serif;
+
+  --d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
 }
 
 .wrapper {
@@ -205,6 +230,20 @@ h1 span {
       filter: blur(0);
       opacity: 1px;
   }
+}
+
+.box {
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
 }
 
 /* ===== ICONES COMPETENCES ===== */
