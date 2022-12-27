@@ -796,9 +796,9 @@ ul> li> a:hover {
   }
 
   .comp-box {
-    width: 76%;
+    width: 80%;
     padding: 0 10px 10px 10px;
-    margin-left: 56px;
+    margin-left: 48px;
     margin-top: -60px;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
