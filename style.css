@@ -233,8 +233,8 @@ h1 span {
 }
 
 .box {
-	margin: max(1rem, 3vw);
-	border: 0.35rem solid;
+	margin: max(1rem, 5vw);
+	border: 0.45rem solid;
 	padding: 3vw;
 	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
 	animation: borderRotate var(--d) linear infinite forwards;
