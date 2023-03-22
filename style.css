@@ -16,12 +16,17 @@
   --text-font-family:'Roboto Condensed', sans-serif;
 }
 
+body::-webkit-scrollbar 
+{
+    width: 0px;
+    background: transparent;
+}
+
 .wrapper {
   min-height: 100vh;
   font-weight: 300;
   color: var(--text-color);
   position: relative;
-  overflow: hidden;
 }
 
 /* ===== SECTION ===== */
