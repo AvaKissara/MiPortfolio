@@ -1,19 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
 :root {
   --text-color: #ececec;
   --icon-background-color: #065A82;
   --brand-color-html5: #e34f26;
-  --brand-color-css3:  #2443bb;
+  --brand-color-css3:  #1749d3;
   --brand-color-js: #f9d405;
-  --brand-color-php: rgb(54, 8, 182);;
-  --brand-color-cs: rgb(96, 0, 206);
+  --brand-color-php: rgb(75, 8, 182);;
+  --brand-color-cs: rgb(69, 0, 206);
   --brand-color-database: #b52e31;
   --brand-color-symfony: #000000;
 
   --title-font-family: 'Saira', sans-serif;
   --text-font-family:'Roboto Condensed', sans-serif;
+
+  --d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
 }
 
 body::-webkit-scrollbar 
@@ -59,9 +84,7 @@ section:nth-child(5) {
 section:nth-child(6) {
   background: #21295C;
 }
-/* section:nth-child(7) {
-  background: #ffcc00;
-} */
+
 
 /* ===== NAV ===== */
 .nav__wrapper {
@@ -192,7 +215,6 @@ h1 span {
   }
 }
 
-
 .overlay>h2{
   font-family: var(--title-font-family);
   color: var(--text-color);
@@ -210,6 +232,20 @@ h1 span {
       filter: blur(0);
       opacity: 1px;
   }
+}
+
+.box {
+	margin: max(1rem, 5vw);
+	border: 0.45rem solid;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
 }
 
 /* ===== ICONES COMPETENCES ===== */
@@ -248,20 +284,24 @@ h1 span {
   color: var(--brand-color-php);
 }
 .social .social__media li:nth-child(5) a:hover iconify-icon {
-  color: var(--brand-color-cs);
-}
-.social .social__media li:nth-child(6) a:hover iconify-icon {
   color: var(--brand-color-database);
 }
+.social .social__media li:nth-child(6) a:hover iconify-icon {
+  color: var(--brand-color-cs);
+}
 .social .social__media li:nth-child(7) a:hover iconify-icon {
-  color: var(--brand-color-symfony);
+  color: var(--brand-color-html5);
 }
 .social .social__media li:nth-child(8) a:hover iconify-icon {
-  color: var(--brand-color-js);
+  color: var(--brand-color-symfony);
 }
 .social .social__media li:nth-child(9) a:hover iconify-icon {
-  color: var(--brand-color-css3);
+  color: var(--brand-color-js);
 }
+.social .social__media li:nth-child(10) a:hover iconify-icon {
+  color: var(--brand-color-database);
+}
+
 
 
 .social .social__media li a {
@@ -452,7 +492,7 @@ h1 span {
 /* ===== PANELS ===== */
 .panels {
   width: 100%;
-  height: 99%;
+  height: 92%;
   display: flex;
   padding-left: 290px;
   padding-right: 160px;
@@ -567,8 +607,8 @@ h1 span {
 .header img {
   float: left;
   margin-right: 20px;
-  width: 100px;
-  height: 148px;
+  width: 124px;
+  height: 140px;
 }
 
 .header h1 {
@@ -585,19 +625,24 @@ h1 span {
 .header h2 {
   font-family: var(--title-font-family);
   font-weight: 300;
-  font-size: 26px;
+  font-size: 16px;
   letter-spacing: 2px;
-  margin-top: 16px;
-  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .header h3 {
   font-family: var(--title-font-family);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
-  margin-top: 0px;
-  margin-bottom: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.header h3 i{
+ padding-right: 1px;
 }
 
 .profile-bio {
@@ -705,6 +750,11 @@ ul> li> a:hover {
   }
 }
 
+.card-icon {
+  color: #ffffff;
+  margin: 1.5rem;
+}
+
 
 
 
@@ -733,19 +783,20 @@ ul> li> a:hover {
   }
 
   .nav__wrapper>.nav li.active .nav__counter {
-    font-size: 32px;
+    font-size: 28px;
+    margin: -20px;
   }
 
   .nav__counter {
     font-size: 16px;
-    margin: -12px;
+    margin: -20px;
   }
 
   .nav__title {
     writing-mode: vertical-lr;
     font-size: 24px;
     font-weight: 700;
-    margin: 0 0 0 -12px;
+    margin: 0 0 0 -20px;
 
   }
 
@@ -777,14 +828,18 @@ ul> li> a:hover {
     height: 5rem;
   }
 
-  .social .social__media li a i {
-    font-size: 3.4rem;
+  .social .social__media li a iconify-icon  {
+    font-size: 4rem;
+  }
+
+  .social .social__media li a:hover iconify-icon {
+    transform: scale3d(1.3, 1.3, 1.3);
   }
 
   .comp-box {
-    width: 76%;
+    width: 80%;
     padding: 0 10px 10px 10px;
-    margin-left: 56px;
+    margin-left: 48px;
     margin-top: -60px;
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
@@ -830,26 +885,52 @@ ul> li> a:hover {
   .profile-card {
     background: #232222;
     color: #ffffff;
-    width: 280px;
+    width: 290px;
     height: 430px;
     margin-top: 0;
   }
 
+  .profile-card p {
+    width: 206px;
+    font-size: 0.9em;
+    line-height: 16px;
+  }
+
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .header img {
+    width: 124px;
+    margin-bottom: 4px;
+  }
+
   .header h1 {
     font-size: 28px;
+    margin-top: -8px;
+    margin-bottom: -6px;
   }
 
   .header h2 {
-    font-size: 22px;
+    font-size: 13px;
+    margin-bottom: 6px;
   }
 
   .header h3 {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .profile-bio {
+    padding-left: 6px;
+  }
+
+  .profile-bio:before {
+    left: -6px;
   }
 
   .profile-social-links {
     background: #000000;
-    width: 54px;
+    width: 50px;
   }
 
   .profile-card {
@@ -860,8 +941,9 @@ ul> li> a:hover {
     animation: hovertouch 1.3s ease-in-out infinite;
 }
 
-  .header img {
-    width: 94px;
+  .card-icon {
+    color: #ffffff;
+    margin: 0.7rem;
   }
 }
 
